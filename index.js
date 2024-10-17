@@ -2,6 +2,7 @@
 import { serve } from "bun";
 import { menuHandler } from "./api/menu.js";
 import { categoriesHandler } from "./api/categories.js";
+import bun from "bun";
 
 serve({
   fetch: async (req) => {
