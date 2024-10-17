@@ -1,5 +1,5 @@
 import { serve } from "bun";
-import db from "./firebase.js";
+import db from "../firebase.js";
 
 serve({
   fetch: async (req) => {
