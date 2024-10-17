@@ -5,7 +5,7 @@ serve({
   fetch: async (req) => {
     const url = new URL(req.url);
 
-    if (url.pathname === "/menu") {
+    if (url.pathname === "/api/menu") {
       try {
         const dataRef = db.ref("menu/menus");
         const snapshot = await dataRef.get();
