@@ -2,10 +2,8 @@ import { initializeApp, cert } from "firebase-admin/app";
 import { getDatabase } from "firebase-admin/database";
 import dotenv from "dotenv";
 
-// Load environment variables from .env
 dotenv.config();
 
-// Initialize Firebase using environment variables
 initializeApp({
   credential: cert({
     projectId: process.env.FIREBASE_PROJECT_ID,
